@@ -19,7 +19,7 @@ mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
-# Install Calico Network Plugin
+# Install Calico Network Plugin for master node  to all node together
 
 curl https://docs.projectcalico.org/manifests/calico.yaml -O
 
@@ -30,12 +30,11 @@ kubectl apply -f calico.yaml
 
 # Install Metrics Server
 
-#kubectl apply -f https://raw.githubusercontent.com/scriptcamp/kubeadm-scripts/main/manifests/metrics-server.yaml
+kubectl apply -f https://raw.githubusercontent.com/scriptcamp/kubeadm-scripts/main/manifests/metrics-server.yaml
 
 # Install Kubernetes Dashboard
 
-#kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
-
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
 
 #--dry-run => Don't apply any changes; just it gives output  what it will done
 
