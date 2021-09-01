@@ -25,18 +25,6 @@ curl https://docs.projectcalico.org/manifests/calico.yaml -O
 
 kubectl apply -f calico.yaml
 
-=================================================
-# Optional
-
-# Install Metrics Server
-
-kubectl apply -f https://raw.githubusercontent.com/scriptcamp/kubeadm-scripts/main/manifests/metrics-server.yaml
-
-# Install Kubernetes Dashboard
-
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml
-
-#--dry-run => Don't apply any changes; just it gives output  what it will done
 
 
 
