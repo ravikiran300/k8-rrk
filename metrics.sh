@@ -42,6 +42,7 @@ subjects:
   namespace: kubernetes-dashboard
 EOF
 
+kubectl create -f ClusterRoleBinding.yaml
 
 #Now we need to find token we can use to log in. Execute following command:
 
