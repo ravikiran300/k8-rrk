@@ -34,7 +34,7 @@ kubectl apply -f https://raw.githubusercontent.com/scriptcamp/kubeadm-scripts/ma
 
 # Install Kubernetes Dashboard
 
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml
 
 #--dry-run => Don't apply any changes; just it gives output  what it will done
 
