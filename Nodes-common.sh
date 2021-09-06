@@ -37,7 +37,8 @@ sudo apt-get  install -y docker-ce docker-ce-cli containerd.io
 #Configure the Docker daemon, in particular to use systemd for the management of the container’s cgroups.
 #Both the container runtime and the kubelet have a property called "cgroup driver", which is important for the management of cgroups on Linux machines.
 
-sudo mkdir /etc/docker
+sudo mkdir -p /etc/docker
+
 cat <<EOF | sudo tee /etc/docker/daemon.json
 {
   "exec-opts": ["native.cgroupdriver=systemd"],
