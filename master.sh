@@ -4,9 +4,13 @@
 ipaddr=`ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1`
 
 
-#kubeadm init = >This command initializes a Kubernetes control-plane node.
+#kubeadm init = >kubeadm init bootstraps a Kubernetes control-plane node
 # --apiserver-advertise-address = The IP address the API Server will advertise it's listening on. If not set the default network interface will be used.
 # --pod-network-cidr = Specify range of IP addresses for the pod network. If set, the control plane will automatically allocate CIDRs for every node.
+#(Classless Inter-Domain Routing )
+
+#Writes kubeconfig files in /etc/kubernetes/ for the kubelet, the controller-manager and the scheduler to use to connect to the API server
+#each with its own identity, as well as an additional kubeconfig file for administration named admin.conf
 
 kubeadm init --apiserver-advertise-address=$ipaddr --pod-network-cidr=192.168.0.0/16
 
