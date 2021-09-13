@@ -9,3 +9,7 @@ From the point of view of a Kubernetes pod, ingress is incoming traffic to the p
 In Kubernetes network policy, you create ingress and egress “allow” rules independently (egress, ingress, or both).
 
 
+
+
+
+
