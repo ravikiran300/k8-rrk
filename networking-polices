@@ -1,0 +1,5 @@
+Network polices : 
+
+By default, pods are non-isolated; they accept traffic from any source.
+
+Pods become isolated by having a NetworkPolicy that selects them
