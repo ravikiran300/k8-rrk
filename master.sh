@@ -19,9 +19,9 @@ echo "Please run this kubeadm join token in workernode0,1,2,so on to join to mas
 
 kubeadm token create --print-join-command > /tmp/worker-join
 
-#mkdir -p $HOME/.kube
-#sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-#sudo chown $(id -u):$(id -g) $HOME/.kube/config
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 # Install Calico Network Plugin for master node  to all node together
 
