@@ -1,6 +1,8 @@
+#Author: RAVIKIRAN
 #ocatant dashboard
 #ps aux | grep kubectl
 #kill -9 proxy
+#kubenav mobile app(copy /etc/kubernetes/admin.conf to kubenav mobile application export kubeconfig path and you get access k8 cluster in mobile app) 
 
 ipaddr=`ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1`
 
