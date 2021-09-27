@@ -2,7 +2,7 @@
 
 kubeadm installation(production level k8s)
 
-First Run which script in all the nodes ./Nodes-common.sh(which docker runtime)
+First run the script in all the nodes ./Nodes-common.sh(which docker runtime)
 
 Next run  master.sh(which bootstarps k8 cluster and install all its compenents)
 
