@@ -7,7 +7,7 @@
 # disable swap 
 sudo swapoff -a
 
-# keeps the swaf off during reboot
+# keeps the swap off during reboot
 sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 
 #=======================================================================================================
@@ -78,11 +78,4 @@ sudo apt-get install -y kubelet kubeadm kubectl
 
 #apt-mark will mark or unmark a software package as being automatically installed and it is used with option hold
 sudo apt-mark hold kubelet kubeadm kubectl
-
-
-
-#echo "Please run this kubeadm join token in workernode0,1,2,so on to join to master......................"
-
-#kubeadm token create --print-join-command
-
 
