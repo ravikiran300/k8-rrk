@@ -19,6 +19,10 @@ echo "Please run this kubeadm join token in workernode0,1,2,so on to join to mas
 
 kubeadm token create --print-join-command > /tmp/worker-join
 
+echo "copied k8 connection token to /tmp/worker-join"
+
+#To make kubectl work for your non-root user, run these commands, which are also part of the kubeadm init output:
+
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
