@@ -4,6 +4,7 @@
 #ps aux | grep kubectl
 #kill -9 proxy
 
+ipaddr=`ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1`
 
 wget -c https://github.com/vmware-tanzu/octant/releases/download/v0.24.0/octant_0.24.0_Linux-64bit.tar.gz
 
@@ -22,7 +23,7 @@ cat <<EOF | sudo tee octant.service
 Description=octant
 [Service]
 Environment="HOME=/root"
-Environment="OCTANT_ACCEPTED_HOSTS=192.46.210.89"
+Environment="OCTANT_ACCEPTED_HOSTS=$ipaddr"
 Environment="KUBECONFIG=/root/.kube/config"
 Environment="OCTANT_LISTENER_ADDR=0.0.0.0:8900"
 Environment="OCTANT_DISABLE_OPEN_BROWSER=true"
