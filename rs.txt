@@ -1,0 +1,6 @@
+
+
+ matchLabels:
+      app: nginx1
+ matchExpressions:
+      - {key: app, operator: In, values: [nginx1]}
