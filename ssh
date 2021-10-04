@@ -1,6 +1,10 @@
 ssh root@172.105.54.213
 ssh root@172.105.47.226 
 
+Metric server
+
+kubectl apply -f https://raw.githubusercontent.com/scriptcamp/kubeadm-scripts/main/manifests/metrics-server.yaml
+
 
 
 
