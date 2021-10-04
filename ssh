@@ -6,6 +6,15 @@ Metric server
 kubectl apply -f https://raw.githubusercontent.com/scriptcamp/kubeadm-scripts/main/manifests/metrics-server.yaml
 
 
+- image: httpd
+        name: httpd
+        resources:
+          limits:
+            memory: 100Mi
+          requests:
+            memory: 50Mi
+
+
 
 
 
