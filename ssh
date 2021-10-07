@@ -13,6 +13,8 @@ kubectl apply -f https://raw.githubusercontent.com/scriptcamp/kubeadm-scripts/ma
             memory: 100Mi
           requests:
             memory: 50Mi
+            
+            https://dev.to/techworld_with_nana/difference-between-emptydir-and-hostpath-volume-types-in-kubernetes-286g
 
 
 
