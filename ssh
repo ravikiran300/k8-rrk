@@ -1,5 +1,4 @@
-ssh root@172.105.54.213
-ssh root@172.105.47.226 
+ssh root@45.79.120.251
 
 https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-ports-targetport-nodeport-service.html
 
@@ -35,9 +34,3 @@ kubectl apply -f https://raw.githubusercontent.com/scriptcamp/kubeadm-scripts/ma
 
 
 
-
-172.105.54.213 - Master - Admin@123
-172.105.47.226 - Worker - Admin@123
-
-
-ssh root@172.105.54.213
