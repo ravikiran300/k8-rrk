@@ -4,6 +4,8 @@
 #kill -9 proxy
 #kubenav mobile app(copy /etc/kubernetes/admin.conf to kubenav mobile application export kubeconfig path and you get access k8 cluster in mobile app) 
 
+#https://jhooq.com/ingress-controller-nginx/
+
 ipaddr=`ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1`
 
 wget -c https://github.com/vmware-tanzu/octant/releases/download/v0.24.0/octant_0.24.0_Linux-64bit.tar.gz
