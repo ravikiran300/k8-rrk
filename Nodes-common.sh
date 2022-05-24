@@ -79,3 +79,4 @@ sudo apt-get install -y kubelet kubeadm kubectl
 #apt-mark will mark or unmark a software package as being automatically installed and it is used with option hold
 sudo apt-mark hold kubelet kubeadm kubectl
 
+#sudo apt install linuxbrew-wrapper
